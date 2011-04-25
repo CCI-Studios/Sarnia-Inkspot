@@ -1,5 +1,5 @@
 body { 
-	background-color: #e3e3e3;
+	background: red; /* fixme #e3e3e3; */
 	color: #676767;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
@@ -10,47 +10,72 @@ body {
 h1 { 
 	color: black;
 	font-size: 20px;
-	padding: 34px 0;
+	padding: 0 0 34px 0;
 }
 
-.upperclass {
-	position: relative;
-	background: #0e76bc;
-	margin: auto 0;
-	width: 100%;
-	height: 560px;
+.content {
 }
 
 .contactinfo {
-	text-align: right;
 	float: right;
+	padding: 22px 0;
+	text-align: right;
 }
 
-.logo {
+.logo {	
 	float: left;
 }
 
-#wrapper {
-	margin: 0 auto;
-	width: 800px;
+#wrapper { 
+	background: url(../images/wrappertop.png) no-repeat;
+	margin: 114px auto 0;
+	padding-top: 33px;
+	position: relative;
+	width: 822px;
+	z-index: 2;
+}
+
+#wrapper > div {
+	background: url(../images/wrapperbottom.png) bottom no-repeat;
+	padding-bottom: 40px;
+}
+
+#wrapper > div > div {
+	background: url(../images/wrappermiddle.png) repeat-y;
+	padding: 0 21px;
+}
+
+#wrapper > div > div > div {
+	background: url(../images/wrapperhighlight.png) 0 0 no-repeat;
 }
 
 #top {
-	padding: 20px 38px;
+	padding: 20px 38px;	
+}
+
+#top > div {
+	border-top: url(../images/contenthr.png) center center repeat-x;
+	padding: 10px 38px;
+	z-index: 4;
 }
 
 #content {
 	padding: 35px;
 }
 
-#bottom {
-	margin-top: 560px;
-}
-
 #footer {
 	color: black;
 	font-size: 10px;
-	width: 800px;	
+	margin: 0 auto;
+	position: relative;
+	width: 800px;
+	z-index: 2;	
+}
+
+#footer > div {
+	background: url(../images/reflection.png) center no-repeat;
+	height: 330px;
+	padding-top: 3px;
 }
 
 #footer a {
@@ -64,4 +89,52 @@ h1 {
 
 #footer span {
 	color: white;
+}
+
+#bg1 {
+	background: #0e76bc url(../images/backgroundhighlight.png) top no-repeat;
+	height: 565px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+#bg2 {
+	background: url(../images/inkpuddle.png) center center no-repeat;
+	height: 122px;
+	left: 50%;
+	margin-left: -173px;
+	position: absolute;
+	top: 645px;
+	width: 682px;
+	z-index: 1;	
+}
+
+#splat1 {
+	background: url(../images/splatleft.png) bottom left no-repeat;
+	height: 221px;
+	left: 0;
+	position: absolute;
+	top: 305px;
+	width: 108px;	
+	z-index: 3;
+}
+
+#splat2 {
+	background: url(../images/splatright.png) top right no-repeat;
+	height: 156px;
+	position: absolute;
+	top: 0;
+	z-index: 3;
+}
+
+#drips {
+	background: url(../images/inkdrops.png) top center no-repeat;
+	height: 555px;
+	position: absolute;
+	top: 0;
+	width: 941px;
+	z-index: 1;
 }
