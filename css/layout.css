@@ -11,6 +11,14 @@ body {
 	padding-top: 96px;
 }
 
+a:link {
+	color: #676767;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
 
 h1 { 
 	color: black;
