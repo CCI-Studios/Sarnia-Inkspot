@@ -1,16 +1,21 @@
 body { 
-	background: red; /* fixme #e3e3e3; */
+	background: #e3e3e3;
 	color: #676767;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	margin: 0 auto;
-	width: 960px;
+	
 }
+#container {
+	position: relative;
+	padding-top: 96px;
+}
+
 
 h1 { 
 	color: black;
-	font-size: 20px;
-	padding: 0 0 34px 0;
+	font-size: 21px;
+	padding: 27px 0 7px 0;
 }
 
 .content {
@@ -18,7 +23,8 @@ h1 {
 
 .contactinfo {
 	float: right;
-	padding: 22px 0;
+	line-height: 1.4em; /* fixme */
+	padding: 15px 0;
 	text-align: right;
 }
 
@@ -28,7 +34,7 @@ h1 {
 
 #wrapper { 
 	background: url(../images/wrappertop.png) no-repeat;
-	margin: 114px auto 0;
+	margin: 0 auto;
 	padding-top: 33px;
 	position: relative;
 	width: 822px;
@@ -37,7 +43,7 @@ h1 {
 
 #wrapper > div {
 	background: url(../images/wrapperbottom.png) bottom no-repeat;
-	padding-bottom: 40px;
+	padding-bottom: 24px;
 }
 
 #wrapper > div > div {
@@ -50,17 +56,13 @@ h1 {
 }
 
 #top {
-	padding: 20px 38px;	
-}
-
-#top > div {
-	border-top: url(../images/contenthr.png) center center repeat-x;
-	padding: 10px 38px;
-	z-index: 4;
+	background: url(../images/contenthr.png) bottom repeat-x;
+	margin: 0 38px;	
+	padding: 8px 0;
 }
 
 #content {
-	padding: 35px;
+	padding: 0px 35px;
 }
 
 #footer {
@@ -68,14 +70,15 @@ h1 {
 	font-size: 10px;
 	margin: 0 auto;
 	position: relative;
-	width: 800px;
+	top: -17px;
+	width: 822px;
 	z-index: 2;	
 }
 
 #footer > div {
-	background: url(../images/reflection.png) center no-repeat;
-	height: 330px;
-	padding-top: 3px;
+	background: url(../images/reflection.png) center top no-repeat;
+	height: 122px;
+	padding: 2px 30px;
 }
 
 #footer a {
@@ -92,7 +95,7 @@ h1 {
 }
 
 #bg1 {
-	background: #0e76bc url(../images/backgroundhighlight.png) top no-repeat;
+	background: #0e76bc url(../images/backgroundhighlight.jpg) top no-repeat;
 	height: 565px;
 	left: 0;
 	position: absolute;
@@ -102,15 +105,27 @@ h1 {
 }
 
 #bg2 {
-	background: url(../images/inkpuddle.png) center center no-repeat;
+	background: url(../images/inkpuddle.png) bottom center no-repeat;
+	bottom: 70px;
 	height: 122px;
 	left: 50%;
-	margin-left: -173px;
+	margin-left: -200px;
 	position: absolute;
-	top: 645px;
 	width: 682px;
 	z-index: 1;	
 }
+
+#bg3 {
+	background: url(../images/inkpuddle1.png) bottom center no-repeat;
+	bottom: 140px;
+	height: 22px;
+	left: 50%;
+	margin-left: -550px;
+	position: absolute;
+	width: 146px;
+	z-index: 1;	
+}
+
 
 #splat1 {
 	background: url(../images/splatleft.png) bottom left no-repeat;
@@ -126,13 +141,17 @@ h1 {
 	background: url(../images/splatright.png) top right no-repeat;
 	height: 156px;
 	position: absolute;
+	right: 0;
 	top: 0;
+	width: 303px;
 	z-index: 3;
 }
 
 #drips {
 	background: url(../images/inkdrops.png) top center no-repeat;
 	height: 555px;
+	left: 50%;
+	margin-left: -470px;
 	position: absolute;
 	top: 0;
 	width: 941px;
