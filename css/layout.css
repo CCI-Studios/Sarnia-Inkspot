@@ -11,7 +11,7 @@ body {
 	padding-top: 96px;
 }
 
-a:link {
+a:link, a:visited {
 	color: #676767;
 	text-decoration: none;
 }
